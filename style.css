@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(
+    135deg,
+    #08152f,
+    #1d4ed8,
+    #4f46e5
+    );
+    color:white;
+    padding-top:90px;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 50px;
+
+    background:#02112e;
+}
+
+header h1{
+    font-size:28px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    padding-top:50px;
+    padding-bottom:60px;
+}
+
+.hero img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid white;
+    box-shadow:0 0 20px rgba(255,255,255,0.3);
+}
+
+.hero h2{
+    margin-top:20px;
+    font-size:45px;
+}
+
+.hero p{
+    margin-top:15px;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:20px;
+}
+
+/* SECTION FIX */
+
+section{
+    scroll-margin-top:120px;
+}
+
+/* CARD */
+
+.card{
+    width:85%;
+    margin:40px auto;
+    padding:35px;
+
+    background:rgba(255,255,255,0.12);
+
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+}
+
+.card h2{
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+/* SKILLS */
+
+ul{
+    list-style:none;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+    gap:15px;
+}
+
+li{
+    background:#2563eb;
+    padding:15px;
+    border-radius:10px;
+}
+
+/* PROJECTS */
+
+.project{
+    margin-bottom:30px;
+}
+
+.project h3{
+    margin-bottom:10px;
+}
+
+/* FORM */
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input,
+textarea{
+    margin:10px 0;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+}
+
+button{
+    background:#22c55e;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#16a34a;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#02112e;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h2{
+        font-size:30px;
+    }
+
+    .hero img{
+        width:180px;
+        height:180px;
+    }
+}
